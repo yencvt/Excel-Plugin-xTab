@@ -5,8 +5,8 @@
 		var args = [];
 		for (var i = 0; i < arguments.length; i++) args.push(arguments[i]); //arguments is not a regular array
 		function n2c(n) {
-		    if (opts.columnNames && opts.columnNames.length > 0) {
-		        return opts.columnNames[n];
+		    if (opts.colNames && opts.colNames.length > 0) {
+		        return opts.colNames[n];
 		    } else {
 		        if (n < 26)
 		            return String.fromCharCode(n + 65);
@@ -16,8 +16,8 @@
 		}
 		
 		function c2n(c) {
-		    if (opts.columnNames && opts.columnNames.length > 0) {
-		        return opts.columnNames.indexOf(c);
+		    if (opts.colNames && opts.colNames.length > 0) {
+		        return opts.colNames.indexOf(c);
 		    } else {
 		        if (c.length == 1) {
 		            return c.charCodeAt(0) - 65;
